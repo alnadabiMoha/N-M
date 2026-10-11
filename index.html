@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>إلى خطيبتي نبراسي</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Reem+Kufi:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf1ee;--ink:#4a2a33;--rose:#b3475f;--soft:#e9c4c9;--card:#fffaf8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#241519;--ink:#f3dde0;--rose:#e58a9c;--soft:#5a3039;--card:#2f1c21}}
+:root[data-theme="dark"]{--bg:#241519;--ink:#f3dde0;--rose:#e58a9c;--soft:#5a3039;--card:#2f1c21}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Amiri','Traditional Arabic',serif}
+#loader{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;background:var(--bg);z-index:10;transition:opacity .8s ease,visibility .8s}
+#loader.done{opacity:0;visibility:hidden}
+#loader h1{font-family:'Reem Kufi','Amiri',serif;font-weight:500;font-size:clamp(22px,6vw,34px);color:var(--rose);margin:0;text-align:center;padding:0 16px}
+.line{width:min(72vw,320px);height:3px;background:var(--soft);border-radius:3px;overflow:hidden}
+.line i{display:block;height:100%;width:0;background:var(--rose);border-radius:3px;animation:fill 3s linear forwards}
+@keyframes fill{to{width:100%}}
+main{max-width:640px;margin:0 auto;padding:48px 22px 80px;opacity:0;transition:opacity 1.2s ease}
+main.show{opacity:1}
+h2{font-family:'Reem Kufi','Amiri',serif;font-weight:500;color:var(--rose);font-size:clamp(26px,7vw,38px);text-align:center;margin:0 0 28px}
+.letter{background:var(--card);border:1px solid var(--soft);border-radius:18px;padding:28px 24px}
+.letter p{font-size:clamp(19px,4.6vw,22px);line-height:2.05;margin:0 0 1.2em}
+.letter p:first-child{font-weight:700;color:var(--rose);text-align:center}
+.letter p:last-child{margin-bottom:0}
+#cat{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bg);z-index:9;opacity:0;visibility:hidden;transition:opacity .6s ease,visibility .6s}
+#cat.on{opacity:1;visibility:visible}
+.say{font-family:'Reem Kufi','Amiri',serif;color:var(--rose);background:var(--card);border:1px solid var(--soft);border-radius:16px;padding:6px 18px;margin-bottom:14px;font-size:22px;opacity:0}
+#cat.on .say{animation:say 1s ease .8s 2}
+#cat.on .paw{animation:wave 2.2s ease-in-out .6s 1;transform-origin:76px 94px}
+#cat.on .tail{animation:wag .5s ease-in-out infinite alternate;transform-origin:88px 100px}
+@keyframes say{0%{opacity:0;transform:scale(.6)}30%,80%{opacity:1;transform:scale(1)}100%{opacity:0}}
+@keyframes wave{0%,100%{transform:rotate(0)}18%{transform:rotate(-140deg)}30%{transform:rotate(-110deg)}42%{transform:rotate(-150deg)}54%{transform:rotate(-110deg)}66%{transform:rotate(-150deg)}82%{transform:rotate(0)}}
+@keyframes wag{to{transform:rotate(14deg)}}
+@media (prefers-reduced-motion:reduce){#cat .say,#cat .hopper{animation:none!important;opacity:1}.line i{animation-duration:.01s}main,#loader{transition:none}}
+</style>
+</head>
+<body>
+<div id="loader" aria-live="polite">
+  <h1>خطيبتي الحلوه نبراسي</h1>
+  <div class="line"><i></i></div>
+</div>
+
+<div id="cat" aria-hidden="true">
+  <div class="say">مياو 🐾</div>
+  <svg class="hopper" width="170" viewBox="0 0 120 130">
+    <path class="tail" d="M88 100 q28 -4 22 -34" fill="none" stroke="#e9a77a" stroke-width="9" stroke-linecap="round"/>
+    <ellipse cx="60" cy="98" rx="30" ry="26" fill="#e9a77a"/>
+    <ellipse cx="60" cy="104" rx="16" ry="18" fill="#fff1e6"/>
+    <path d="M30 40 L34 10 L54 28Z M90 40 L86 10 L66 28Z" fill="#e9a77a"/>
+    <path d="M36 34 L37 20 L47 29Z M84 34 L83 20 L73 29Z" fill="#f4b9b9"/>
+    <circle cx="60" cy="52" r="32" fill="#e9a77a"/>
+    <circle cx="42" cy="60" r="6" fill="#f4b9b9" opacity=".6"/><circle cx="78" cy="60" r="6" fill="#f4b9b9" opacity=".6"/>
+    <circle cx="48" cy="50" r="4" fill="#3b2a2a"/><circle cx="72" cy="50" r="4" fill="#3b2a2a"/>
+    <path d="M56 59 h8 l-4 5z" fill="#d9707f"/>
+    <path d="M60 64 q-5 6 -10 2 M60 64 q5 6 10 2" stroke="#3b2a2a" fill="none" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M34 58 l-14 -3 M34 63 l-14 3 M86 58 l14 -3 M86 63 l14 3" stroke="#3b2a2a" stroke-width="1.2" stroke-linecap="round"/>
+    <ellipse cx="46" cy="120" rx="9" ry="6" fill="#fff1e6"/>
+    <g class="paw"><ellipse cx="76" cy="108" rx="7" ry="16" fill="#e9a77a"/><ellipse cx="76" cy="120" rx="9" ry="6" fill="#fff1e6"/></g>
+  </svg>
+</div>
+
+<main id="main">
+  <h2>إلى خطيبتي</h2>
+  <article class="letter">
+<p>أنتي يا أجمل أقداري وأحلى عطايا ربي❤️🥹🤍</p>
+
+<p>والله إني أحمد ربي كل يوم إنه رزقني فيك ورزقني بألطف بنت وأحلى بنت وأجمل قلب في الدنيا كلها ❤️‍🩹</p>
+
+<p>يمكن ما أقدر أوصف لك بالكلام 🏃🏻‍♂️كثر ما أنا فخور فيك وفخور إنك نصيبي وخطيبتي والإنسانة اللي اختارها ربي تكون شريكة عمري وجودك في حياتي نعمة كبيرة وكل ما أفكر فيها أقول الحمدلله على أجمل رزق وأحلى نصيب🥹❤️</p>
+
+<p>أنتي مو بس أجمل بنت عرفتها أنتي أجمل شعور وأحن قلب وألطف روح وأجمل شيء صار لي في هذي السنة كلها من بين كل الأشياء اللي مرت علي وجودك كان أجملها وكأن ربي كتب لي أجمل أقداري يوم رزقني فيك 🤍✨</p>
+
+<p>وأبيك تعرفين إني فخور فيك وفخور بقلبك وبروحك وبأخلاقك وبكل تفصيلة صغيرة تخليك أنتي فخور إن الإنسانة اللي بتكون شريكة حياتي هي بنت بهالجمال مو جمال الشكل وبس، لكن جمال الروح والقلب والطيبة وأحس إني محظوظ لأن ربي اختار لي إنسانة مثلك تكون نصيبي وشريكة أيامي الجاية ❤️🫂</p>
+
+<p>وفي شيء ثاني يسعدني من كل قلبي وهو أهلك وعائلتك الجميلة والله إني فرحان جدا إني تعرفت عليكم لأنكم من ألطف العوائل اللي شفتها في حياتي ومن أول ما تعاملت معكم وأنا أحس براحة كبيرة جدا تجاهكم وجود هالقبول والارتياح بيننا يعني لي الكثير ويخليني أطمئن وأفرح أكثر لأني ما أشوف إني رزقت ببنت جميلة وطيبة مثلك وبس بل أشوف إني رزقت بعائلة جميلة بأخلاقها وطيبتها وأسلوبها ربي يديم بيننا المحبة والاحترام ويجعلني دائما عند حسن ظنكم،ك ويكتب لي إني أكون فردا من عائلتكم وأكون قد الثقة اللي منحتوني إياها 🥹💖🖤</p>
+
+<p>يا رب إني استودعتك قلبها وضحكتها وأيامها فاحفظها لي وأسعدها أضعاف السعادة اللي تدخلها قلبي واكتب لنا عمرا طويلا مع بعض مليان راحة وطمأنينة وفرح واجعلني لها الزوج اللي يحتويها ويصونها ويكون لها أمان وسند طول العمر يا رب مثل ما رزقتني فيها تمم فرحتنا على خير واجمعنا بالحلال في بيت واحد ونعيش أحلامنا سوا ونصنع ذكريات حلوة نكبر عليها مع بعض آمين يا رب العالمين 🤲🏻💍❤️</p>
+
+<p>ولو سألوني عن أجمل شيء رزقني فيه ربي هذي السنة بقول بكل فخر: أنتي يا خطيبتي يا ألطف بنت ويا أجمل قلب ويا أحلى نصيب كتبه الله لي وجودك أجمل هدية من ربي، ووجود أهلك في حياتي زاد هالنعمة جمالًا الحمدلله على رزق جمع لي بين أجمل إنسانة وألطف عائلة وأسأل ربي أن يديمكم في حياتي ويكتب لنا أجمل الأيام مع بعض 🥹❤️‍🩹💍و هيك الله بدووه🙈🏃🏻‍♂️</p>
+  </article>
+</main>
+
+<script>
+var cat=document.getElementById('cat');
+setTimeout(function(){
+  document.getElementById('loader').classList.add('done');
+  cat.classList.add('on');
+},3100);
+setTimeout(function(){
+  cat.classList.remove('on');
+  document.getElementById('main').classList.add('show');
+},6500);
+</script>
+</body>
+</html>
